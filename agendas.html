@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Multicapas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulario para agregar contacto -->
+        <div id="contact-form">
+            <h2>Agregar Nuevo Contacto</h2>
+            <form id="new-contact-form">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" placeholder="Apellido" required>
+                <input type="tel" id="telefono" placeholder="Teléfono" required>
+                <button type="submit">Agregar Contacto</button>
+            </form>
+        </div>
+
+        <!-- Botón para mostrar/ocultar los contactos -->
+        <button id="toggle-contacts-btn">Mostrar Contactos</button>
+
+        <!-- Listado de contactos (inicialmente oculto) -->
+        <div id="contact-list" style="display: none;">
+            <h2>Agenda de Contactos</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Teléfono</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contacts">
+                        <!-- Los contactos se cargarán aquí dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
